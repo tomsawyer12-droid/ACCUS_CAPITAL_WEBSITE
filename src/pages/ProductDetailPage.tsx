@@ -214,7 +214,7 @@ export function ProductDetailPage() {
               </Button>
               <Button 
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg rounded-full font-semibold"
+                className="border-2 border-black text-black bg-transparent hover:bg-black/5 px-8 py-6 text-lg rounded-full font-semibold"
                 onClick={() => navigate('/contact')}
               >
                 Contact Us
