@@ -156,9 +156,9 @@ export function ContactPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
               >
-                <h2 className="text-3xl font-bold text-[#00A99D] mb-6">Our Branches</h2>
+                <h2 className="text-3xl font-bold text-[#00A99D] mb-6">Our Branch</h2>
                 <p className="text-gray-600 mb-8">
-                  Visit any of our branches across Uganda for personalized service.
+                  Visit our Kampala branch for personalized service.
                 </p>
                 <div className="space-y-4">
                   {branches.map((branch, index) => (
