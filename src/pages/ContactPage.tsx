@@ -206,9 +206,15 @@ export function ContactPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-gray-200 rounded-2xl h-96 flex items-center justify-center shadow-lg"
+              className="bg-gray-200 rounded-2xl h-96 overflow-hidden shadow-lg"
             >
-              <p className="text-gray-500">Map Integration Placeholder</p>
+              <iframe
+                title="ACCUS Capital Head Office Location"
+                src="https://maps.google.com/maps?q=place/ChIJD7fiBh9P3xARFUGbW847CQQ&output=embed"
+                className="w-full h-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </motion.div>
           </div>
         </section>
