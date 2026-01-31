@@ -23,7 +23,7 @@ export function ProductDetailPage() {
         <Header />
         <main className="pt-32 pb-20">
           <div className="container mx-auto px-6 lg:px-12 max-w-[1400px] text-center">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">Product Not Found</h1>
+            <h1 className="text-2xl font-bold text-gray-900 mb-4">Product Not Found</h1>
             <p className="text-lg text-gray-600 mb-8">Sorry, we couldn't find the product you're looking for.</p>
             <Button 
               onClick={() => navigate('/')}
