@@ -210,7 +210,7 @@ export function ContactPage() {
             >
               <iframe
                 title="ACCUS Capital Head Office Location"
-                src="https://maps.google.com/maps?q=place/ChIJD7fiBh9P3xARFUGbW847CQQ&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31918.137935080224!2d32.5588303!3d0.2899215!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbd53ff41aa21%3A0x220c25a5c0d8b17b!2sAccus%20Capital%20Limited!5e0!3m2!1sen!2sug!4v1769879974962!5m2!1sen!2sug"
                 className="w-full h-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
