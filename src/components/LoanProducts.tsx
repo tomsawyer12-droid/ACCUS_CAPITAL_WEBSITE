@@ -110,7 +110,7 @@ export function LoanProducts() {
 
                 <Button
                   className="w-full bg-[#00A99D] hover:bg-[#008B82] text-white hover:shadow-lg hover:scale-105 transition-all duration-300"
-                  onClick={(e) => {
+                  onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
                     e.stopPropagation();
                     handleProductClick(product.id);
                   }}

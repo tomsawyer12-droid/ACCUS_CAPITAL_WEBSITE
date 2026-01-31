@@ -37,11 +37,11 @@ export function ContactPage() {
 
   const branches = [
     { name: 'Kampala Branch', address: 'Plot 123, Kampala Road', phone: '+256 700 123 456' },
-    { name: 'Entebbe Branch', address: 'Plot 45, Airport Road', phone: '+256 700 123 457' },
-    { name: 'Jinja Branch', address: 'Plot 78, Main Street', phone: '+256 700 123 458' },
-    { name: 'Mbarara Branch', address: 'Plot 90, High Street', phone: '+256 700 123 459' },
-    { name: 'Gulu Branch', address: 'Plot 34, Churchill Drive', phone: '+256 700 123 460' },
-    { name: 'Mbale Branch', address: 'Plot 56, Republic Street', phone: '+256 700 123 461' },
+    // { name: 'Entebbe Branch', address: 'Plot 45, Airport Road', phone: '+256 700 123 457' },
+    // { name: 'Jinja Branch', address: 'Plot 78, Main Street', phone: '+256 700 123 458' },
+    // { name: 'Mbarara Branch', address: 'Plot 90, High Street', phone: '+256 700 123 459' },
+    // { name: 'Gulu Branch', address: 'Plot 34, Churchill Drive', phone: '+256 700 123 460' },
+    // { name: 'Mbale Branch', address: 'Plot 56, Republic Street', phone: '+256 700 123 461' },
   ];
 
   return (
