@@ -1,24 +1,28 @@
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin, Clock } from 'lucide-react';
 import logo from 'figma:asset/a5ef97919a18c066e5bfd791ba39348318cf79e4.png';
 
 export function Footer() {
   const quickLinks = [
-    { name: 'About Us', href: '#about' },
-    { name: 'Products', href: '#products' },
-    { name: 'Loans', href: '#loans' },
-    { name: 'FAQs', href: '#faqs' },
-    { name: 'Contact', href: '#contact' },
-    { name: 'Careers', href: '#careers' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Products', href: '/products' },
+    { name: 'Loans', href: '/loans' },
+    // No dedicated FAQs route exists yet; temporarily link to Blog
+    { name: 'FAQs', href: '/blog' },
+    { name: 'Contact', href: '/contact' },
+    { name: 'Careers', href: '/careers' },
   ];
 
   const loanProducts = [
-    { name: 'Personal Loans', href: '#' },
-    { name: 'Salary Loans', href: '#' },
-    { name: 'SME Loans', href: '#' },
-    { name: 'Asset Financing', href: '#' },
-    { name: 'Mortgage Loans', href: '#' },
-    { name: 'Investment Loans', href: '#' },
+    // These map to product detail routes defined in App (homePageProducts)
+    { name: 'Personal Loans', href: '/products/personal-loans-home' },
+    { name: 'Salary Loans', href: '/products/salary-loans-home' },
+    { name: 'SME Loans', href: '/products/business-loans-home' },
+    // The following currently have no dedicated detail pages; link to listing
+    { name: 'Asset Financing', href: '/products' },
+    { name: 'Mortgage Loans', href: '/products' },
+    { name: 'Investment Loans', href: '/products' },
   ];
 
   const socialLinks = [
@@ -76,13 +80,13 @@ export function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="hover:text-[#00A99D] transition-colors duration-200 inline-flex items-center group"
                   >
                     <span className="w-0 group-hover:w-2 h-0.5 bg-[#00A99D] mr-0 group-hover:mr-2 transition-all duration-200"></span>
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -99,13 +103,13 @@ export function Footer() {
             <ul className="space-y-3">
               {loanProducts.map((product, index) => (
                 <li key={index}>
-                  <a
-                    href={product.href}
+                  <Link
+                    to={product.href}
                     className="hover:text-[#00A99D] transition-colors duration-200 inline-flex items-center group"
                   >
                     <span className="w-0 group-hover:w-2 h-0.5 bg-[#00A99D] mr-0 group-hover:mr-2 transition-all duration-200"></span>
                     {product.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
